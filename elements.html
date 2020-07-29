@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p>Verzije Visual Studia:</p>
+        <ul>
+            <li>Visual Studio 2012</li>
+            <li>Visual Studio 2013</li>
+            <li>Visual Studio 2015</li>
+        </ul>
+        <hr/>
+
+        <script>
+            var stavke = document.getElementsByTagName("li");
+            document.write(stavke[0].textContent + "<br>");
+            stavke[0].textContent = "VS2012";
+            stavke[1].textContent = "VS2013";
+            stavke[2].textContent = "VS2015";
+        </script>
+    </body>
+</html>
