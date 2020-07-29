@@ -1,0 +1,35 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            <input id="cb1" type="checkbox" name="CheckBox1"/>
+            <label for="CheckBox1">Stavka1</label>
+            <br/>
+            <input id="cb2" type="checkbox" name="CheckBox2"/>
+            <label for="CheckBox2">Stavka2</label>
+            <br/>
+            <input id="cb3" type="checkbox" name="CheckBox3"/>
+            <label for="CheckBox3">Stavka3</label>
+            <br/>
+            <input id="btn1" type="button" value="Prikazi" onclick="provera()"/>
+            <br/>
+            <br/>
+            <span id="span1"></span>
+        </form>
+
+        <script type="text/javascript">
+            var c1 = document.getElementById("cb1");
+            var c2 = document.getElementById("cb2");
+            var c3 = document.getElementById("cb3");
+            var labela = document.getElementById("span1");
+            c1.checked = true;
+            c2.checked = false;
+            c3.checked = true;
+            function provera(){
+                labela.innerHTML = c1.id + " " + c1.checked + "<br>" + c2.id + " " + c2.checked + "<br>" + c3.id + " " + c3.checked + "<br>";
+            }
+        </script>
+    </body>
+</html>
