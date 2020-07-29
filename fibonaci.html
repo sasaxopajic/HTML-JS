@@ -1,0 +1,45 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+            <button id="sasa" onclick="fib()">Izracunaj</button>
+            <div id="fib">                
+            </div>
+        <script type="text/javascript">
+            function fib(){
+            
+                var f1 = 0;
+                var f2 = 1;
+                var m;
+
+                var fibNiz = '';
+            
+                var p = prompt("Koliko elemenata fibonacijevog niza zelite da izracunate?", " ");
+            
+                if(p != null){
+                    if(p == 1){
+                        fibNiz = fibNiz + f1;
+                    }
+                    else if(p == 2){
+                        fibNiz = fibNiz + f1 + "<br>";
+                        fibNiz = fibNiz + f2 + "<br>";
+                    }
+                    else{
+                        fibNiz = fibNiz + f1 + "<br>";
+                        fibNiz = fibNiz + f2 + "<br>";
+                        for(var i = 2; i < p; i++){
+                        m = f1 + f2;
+                        f1 = f2;
+                        f2 = m;
+                        fibNiz = fibNiz + m + "<br>";
+                        }
+                    }
+                }
+
+                var divElement = document.getElementById('fib');
+                divElement.innerHTML = fibNiz;
+            }
+        </script>
+    </body>
+</html>

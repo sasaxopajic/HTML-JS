@@ -1,0 +1,25 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button onclick="zaustavi()">Zaustavi</button>
+        <br/>
+        <p id="p1">
+        </p>
+
+        <script type="text/javascript">
+            var interval = setInterval(function(){
+                tajmer();
+            }, 1000);
+            function tajmer(){
+                var d = new Date();
+                var t = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+                document.getElementById("p1").innerHTML = t;
+            }
+            function zaustavi(){
+                clearInterval(interval);
+            }
+        </script>
+    </body>
+</html>

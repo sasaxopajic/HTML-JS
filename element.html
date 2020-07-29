@@ -1,0 +1,17 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="p1">Prvi paragraf</p>
+        <script>
+            var p1 = document.getElementById("p1");
+            var id1 = p1.id;
+            var id2 = p1.getAttribute("id");
+            p1.style.color="red";
+            p1.setAttribute("class", "zelenapozadina");
+            document.write(id1 + "<br>");
+            document.write(id2 + "<br>");
+        </script>
+    </body>
+</html>

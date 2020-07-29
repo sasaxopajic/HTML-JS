@@ -1,0 +1,19 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="p1"></p>
+        <script>
+            var p1 = document.getElementById("p1");
+            function novaLokacija(){
+                window.location.assign("Strana01.html")
+            }
+            function tekucaLokacija(){
+                p1.innerHTML = "Lokacija strane je " + window.location.href;
+            }
+        </script>
+        <button onclick="tekucaLokacija()">Lokacija</button> &nbsp;
+        <button onclick="novaLokacija()">Strana01</button>
+    </body>
+</html>
